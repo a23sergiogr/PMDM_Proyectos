@@ -12,20 +12,22 @@
         android:id="@+id/textSelect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/textSelectText"
-        android:padding="6dp"/>
+        android:padding="6dp"
+        android:text="@string/textSelectText" />
 
     <Spinner
         android:id="@+id/spinnerAnimalList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="6dp"/>
+        android:entries="@array/listAnimals"
+        android:padding="6dp"
+        android:spinnerMode="dialog" />
 
     <Button
         android:id="@+id/buttonSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/buttonSendName"
-        android:padding="6dp"/>
+        android:padding="6dp"
+        android:text="@string/buttonSendName" />
 
 </LinearLayout>

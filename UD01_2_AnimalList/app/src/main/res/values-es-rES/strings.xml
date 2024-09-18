@@ -3,4 +3,9 @@
     <string name="app_name">Lista de Animales</string>
     <string name="textSelectText">Selecciona un Animal</string>
     <string name="buttonSendName">Enviar</string>
+    <string-array name="listAnimals">
+        <item>Perro</item>
+        <item>Gato</item>
+        <item>Pato</item>
+    </string-array>
 </resources>

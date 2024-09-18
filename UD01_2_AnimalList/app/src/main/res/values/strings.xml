@@ -2,4 +2,9 @@
     <string name="app_name">UD01_2_AnimalList</string>
     <string name="textSelectText">Select an Animal</string>
     <string name="buttonSendName">Send</string>
+    <string-array name="listAnimals">
+        <item>Dogs</item>
+        <item>Cat</item>
+        <item>Duck</item>
+    </string-array>
 </resources>
