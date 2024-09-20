@@ -30,4 +30,12 @@
         android:padding="6dp"
         android:text="@string/buttonSendName" />
 
+    <TextView
+        android:id="@+id/textKindsAnimals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="" />
+
+
 </LinearLayout>

@@ -7,4 +7,6 @@
         <item>Cat</item>
         <item>Duck</item>
     </string-array>
+    <string name="chihuahua">Chihuahua</string>
+    <string name="germanShepard">German Shepard</string>
 </resources>

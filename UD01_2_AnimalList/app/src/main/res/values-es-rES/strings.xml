@@ -8,4 +8,6 @@
         <item>Gato</item>
         <item>Pato</item>
     </string-array>
+    <string name="chihuahua">Chiguagua</string>
+    <string name="germanShepard">Pastor Aleman</string>
 </resources>
