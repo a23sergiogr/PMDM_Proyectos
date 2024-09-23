@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">UD01_3_Chronos</string>
+    <string name="buttonStartText">Start</string>
+    <string name="buttonResumeText">Resume</string>
+    <string name="buttonPauseText">Pause</string>
+    <string name="buttonStop">Stop</string>
 </resources>
