@@ -18,11 +18,13 @@ class MainActivity : AppCompatActivity() {
     private lateinit var chronos : Chronometer
     private var running = false
     private var offset = 0L
+    private var pressBtn = 0
 
     override fun onSaveInstanceState(outState: Bundle) {
         outState.putBoolean(RUNNING_KEY, running)
         outState.putLong(OFFSET_KEY, offset)
         outState.putLong(BASE_KEY, chronos.base)
+        outState.putInt(PRESSBUTTON_KEY,pressBtn)
         super.onSaveInstanceState(outState)
     }
 
@@ -39,9 +41,17 @@ class MainActivity : AppCompatActivity() {
         //chronos init
         chronos = findViewById(R.id.chronos)
 
+        //Buttons
+        val btnStartResume = findViewById<Button>(R.id.buttonStartResume)
+        val btnPause = findViewById<Button>(R.id.buttonPause)
+        val btnStop = findViewById<Button>(R.id.buttonStop)
+
         if (savedInstanceState != null){
             running = savedInstanceState.getBoolean(RUNNING_KEY)
             offset = savedInstanceState.getLong(OFFSET_KEY)
+            pressBtn = savedInstanceState.getInt(PRESSBUTTON_KEY)
+            presButton(pressBtn,btnStartResume, btnPause, btnStop)
+
             if(running){
                 chronos.base = savedInstanceState.getLong(BASE_KEY)
                 chronos.start()
@@ -51,16 +61,10 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        //Buttons
-        val btnStartResume = findViewById<Button>(R.id.buttonStartResume)
-        val btnPause = findViewById<Button>(R.id.buttonPause)
-        val btnStop = findViewById<Button>(R.id.buttonStop)
-
-
-        btnStop.backgroundTintList = getColorStateList(R.color.presButton)
         btnStartResume.setOnClickListener {
             if(!running){
-                colorChange(btnStartResume, btnPause, btnStop)
+                pressBtn = 0
+                presButton(pressBtn,btnStartResume, btnPause, btnStop)
                 chronos.base = SystemClock.elapsedRealtime() - offset
                 chronos.start()
                 running = true
@@ -69,7 +73,8 @@ class MainActivity : AppCompatActivity() {
 
         btnPause.setOnClickListener {
             if (running){
-                colorChange(btnPause, btnStartResume, btnStop)
+                pressBtn = 1
+                presButton(pressBtn,btnStartResume, btnPause, btnStop)
                 btnStartResume.text = getText(R.string.buttonResumeText)
                 chronos.stop()
                 running = false
@@ -78,7 +83,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnStop.setOnClickListener {
-            colorChange(btnStop, btnPause, btnStartResume)
+            pressBtn = 2
+            presButton(pressBtn,btnStartResume, btnPause, btnStop)
             btnStartResume.text = getText(R.string.buttonStartText)
             offset = 0L
             chronos.base = SystemClock.elapsedRealtime()
@@ -87,9 +93,52 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun presButton(n: Int, btnStartResume: Button, btnPause: Button, btnStop: Button){
+        when (n) {
+            0 -> colorChange(btnStartResume, btnPause, btnStop)
+            1 -> colorChange(btnPause, btnStartResume, btnStop)
+            2 -> colorChange(btnStop, btnPause, btnStartResume)
+        }
+    }
     private fun colorChange(pres: Button, nonPres: Button, nonPres2: Button){
         pres.backgroundTintList = getColorStateList(R.color.presButton)
         nonPres.backgroundTintList = getColorStateList(R.color.nonPresButton)
         nonPres2.backgroundTintList = getColorStateList(R.color.nonPresButton)
+    }
+
+    //Pasa a segundo Plano
+    override fun onStop() {
+        if (running){
+            running
+            offset = 0L
+            chronos.base = SystemClock.elapsedRealtime()
+            chronos.stop()
+        }
+        super.onStop()
+    }
+
+    //Vuelve a primer Plano
+    override fun onRestart() {
+        if(running){
+            chronos.base = SystemClock.elapsedRealtime() - offset
+            chronos.start()
+        }
+        super.onRestart()
+    }
+
+    override fun onPause() {
+        if (running){
+            offset = SystemClock.elapsedRealtime() - chronos.base
+            chronos.stop()
+        }
+        super.onPause()
+    }
+
+    override fun onResume() {
+        if(running){
+            chronos.base = SystemClock.elapsedRealtime() - offset
+            chronos.start()
+        }
+        super.onResume()
     }
 }

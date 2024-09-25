@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UD01_Practica_ConversorMoneda</string>
+    <string name="textApp_name">Easy Dolar to Euro Convert</string>
+    <string name="btnConvertName">Convert</string>
+</resources>
