@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ContactosLinearLayout</string>
+    <string name="textLlamando">LLamando a </string>
+    <string name="llamar">Llamar</string>
+    <string name="nombre1">Nombre 1</string>
+    <string name="nombre2">Nombre 2</string>
+    <string name="tlf1">123 45 67 89</string>
+    <string name="tlf2">987 65 43 21</string>
+</resources>
