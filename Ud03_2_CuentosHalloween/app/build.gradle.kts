@@ -1,15 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    id("androidx.navigation.safeargs")
 }
 
 android {
-    namespace = "com.example.ud03_1_fragmentsencrypt"
+    namespace = "com.example.ud03_2_cuentoshalloween"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.ud03_1_fragmentsencrypt"
+        applicationId = "com.example.ud03_2_cuentoshalloween"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -42,9 +41,6 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
-    implementation("androidx.fragment:fragment-ktx:1.8.4")
-    // https://mvnrepository.com/artifact/androidx.navigation/navigation-fragment-ktx
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
