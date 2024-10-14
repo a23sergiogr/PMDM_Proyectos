@@ -1,5 +1,37 @@
 <resources>
     <string name="app_name">Ud03_2_CuentosHalloween</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="textWelcome">Insert your name</string>
+    <string name="textHintWelcome">Insert your name here</string>
+    <string name="btnWelcomeName">Next</string>
+    <string name="textTitleStory1">Enchanted Forest</string>
+    <string name="textTitleStory2">Haunted House</string>
+    <string name="textStory1">Deep in the heart of an ancient, forgotten land lay the Enchanted Forest, a place of twisted trees and thick, perpetual fog.
+    No one dared venture inside, for the stories passed down for generations spoke of something sinister lurking within.
+    It was said the forest was alive, not with life, but with hunger. One night, a traveler named NAME,
+    seeking shelter from a storm, stumbled upon the forest\'s edge.
+    The wind howled, and the rain battered her, leaving her no choice but to enter the forbidden wood.
+    As soon as she crossed into the forest, the air grew still, unnaturally silent.
+    The trees stood unnervingly tall, their blackened bark twisted like skeletal fingers, and their leaves rustled in a whisper only NAME could hear.
+    She pressed on, feeling eyes upon her but seeing no one. Suddenly, a faint sound broke the silence—a child\'s laughter, distant and echoing.
+    NAME’s heart raced, but something in her compelled her forward.
+    She followed the laughter deeper into the woods, where the fog thickened and the trees seemed to close in on her.
+    She soon found a clearing where an old, crumbling stone well stood, its mouth yawning wide.
+    Sitting beside it was a small girl, her back turned to NAME, humming a haunting lullaby.
+    NAME hesitated, but before she could speak, the girl’s head snapped around, revealing a face twisted in agony—her mouth stretched impossibly wide,
+    her eyes hollow and dark. "You shouldn’t have come," the girl rasped, her voice a guttural growl.
+    The trees seemed to close in, the branches reaching for NAME like claws.
+    She turned to run, but the forest had shifted—there was no path, no way out.
+    The laughter came again, closer this time, not from the girl but from the trees themselves.
+    The last thing NAME saw was the ground opening beneath her, swallowing her whole, as the forest whispered its ancient curse:
+    "All who enter must feed the woods."</string>
+
+    <string name="textStory2">
+    Sabela was a young woman fascinated by haunted houses.
+    One day, she heard rumors about an abandoned mansion in the forest and decided to explore it.
+    Inside the house, Sabela found a portrait of Isabella, the former owner, who looked very much like her.
+    Intrigued, she investigated Isabella\'s history and discovered that she had mysteriously disappeared.
+    During her nights in the mansion, Sabela felt Isabella\'s presence and had a dream in which Isabella handed her a letter.
+    The letter revealed the truth about her disappearance.
+</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

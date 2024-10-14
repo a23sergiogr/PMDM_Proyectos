@@ -13,8 +13,7 @@ class CuentoLosSusurrosDelBosqueEncantadoFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_encrypt, container, false)
-
+        val view = inflater.inflate(R.layout.fragment_cuento_los_susurros_del_bosque_encantado, container, false)
         return view
     }
 }

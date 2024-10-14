@@ -9,7 +9,7 @@
         android:id="@+id/welcomeFragment2"
         android:name="com.example.ud03_1_fragmentsencrypt.WelcomeFragment"
         android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" >
+        tools:layout="@layout/fragment_welcome">
         <action
             android:id="@+id/action_welcomeFragment2_to_messageFragment2"
             app:destination="@id/messageFragment2" />
@@ -18,7 +18,7 @@
         android:id="@+id/messageFragment2"
         android:name="com.example.ud03_1_fragmentsencrypt.MessageFragment"
         android:label="fragment_message"
-        tools:layout="@layout/fragment_message" >
+        tools:layout="@layout/fragment_message">
         <action
             android:id="@+id/action_messageFragment2_to_encryptFragment2"
             app:destination="@id/encryptFragment" />
@@ -27,7 +27,7 @@
         android:id="@+id/encryptFragment"
         android:name="com.example.ud03_1_fragmentsencrypt.EncryptFragment"
         android:label="fragment_encrypt"
-        tools:layout="@layout/fragment_encrypt" >
+        tools:layout="@layout/fragment_encrypt">
         <argument
             android:name="message"
             app:argType="string" />

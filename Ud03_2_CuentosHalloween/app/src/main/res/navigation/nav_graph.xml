@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.ud03_2_cuentoshalloween.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_selectionFragment2"
+            app:destination="@id/selectionFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectionFragment2"
+        android:name="com.example.ud03_2_cuentoshalloween.SelectionFragment"
+        android:label="fragment_selection"
+        tools:layout="@layout/fragment_selection">
+        <action
+            android:id="@+id/action_selectionFragment2_to_cuentoLosSusurrosDelBosqueEncantadoFragment"
+            app:destination="@id/cuentoLosSusurrosDelBosqueEncantadoFragment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/cuentoLosSusurrosDelBosqueEncantadoFragment"
+        android:name="com.example.ud03_2_cuentoshalloween.CuentoLosSusurrosDelBosqueEncantadoFragment"
+        android:label="fragment_cuento_los_susurros_del_bosque_encantado"
+        tools:layout="@layout/fragment_cuento_los_susurros_del_bosque_encantado" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+</navigation>
