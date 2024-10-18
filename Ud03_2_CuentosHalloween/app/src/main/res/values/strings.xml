@@ -3,9 +3,9 @@
     <string name="textWelcome">Insert your name</string>
     <string name="textHintWelcome">Insert your name here</string>
     <string name="btnWelcomeName">Next</string>
-    <string name="textTitleStory1">Enchanted Forest</string>
-    <string name="textTitleStory2">Haunted House</string>
-    <string name="textStory1">Deep in the heart of an ancient, forgotten land lay the Enchanted Forest, a place of twisted trees and thick, perpetual fog.
+    <string name="textTitleEnchantedForest">Enchanted Forest</string>
+    <string name="textTitleHauntedHouse">Haunted House</string>
+    <string name="textStoryEnchantedForest">Deep in the heart of an ancient, forgotten land lay the Enchanted Forest, a place of twisted trees and thick, perpetual fog.
     No one dared venture inside, for the stories passed down for generations spoke of something sinister lurking within.
     It was said the forest was alive, not with life, but with hunger. One night, a traveler named NAME,
     seeking shelter from a storm, stumbled upon the forest\'s edge.
@@ -25,7 +25,7 @@
     The last thing NAME saw was the ground opening beneath her, swallowing her whole, as the forest whispered its ancient curse:
     "All who enter must feed the woods."</string>
 
-    <string name="textStory2">
+    <string name="textStoryHauntedHouse">
     Sabela was a young woman fascinated by haunted houses.
     One day, she heard rumors about an abandoned mansion in the forest and decided to explore it.
     Inside the house, Sabela found a portrait of Isabella, the former owner, who looked very much like her.

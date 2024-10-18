@@ -12,9 +12,9 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewStory1"
+        android:id="@+id/cardViewEnchantedForest"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="95dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
@@ -29,23 +29,23 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/bosque" />
+                android:src="@drawable/enchanted_forest" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="@string/textTitleStory1"
-                android:textSize="40sp"
-                android:textColor="@color/textOrange"/>
+                android:text="@string/textTitleEnchantedForest"
+                android:textColor="@color/textOrange"
+                android:textSize="32sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewStory2"
+        android:id="@+id/cardViewHauntedHouse"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="95dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
@@ -53,7 +53,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="100dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
@@ -65,10 +65,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/textTitleStory2"
-                android:textSize="40sp"
                 android:gravity="center_horizontal"
-                android:textColor="@color/textOrange"/>
+                android:text="@string/textTitleHauntedHouse"
+                android:textColor="@color/textOrange"
+                android:textSize="32sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

@@ -3,35 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CuentoLosSusurrosDelBosqueEncantadoFragment"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:gravity="center_horizontal">
+    tools:context=".HauntedHouseFragment">
 
     <TextView
         android:id="@+id/textTitleEnchantedForest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/textTitleEnchantedForest"
-        android:gravity="center"
-        android:textSize="26sp"
-        android:textStyle="bold"
         android:layout_margin="20dp"
         android:layout_marginBottom="0dp"
-        android:textColor="@color/textOrange"/>
+        android:gravity="center"
+        android:text="@string/textTitleHauntedHouse"
+        android:textColor="@color/textOrange"
+        android:textSize="26sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="340dp"
-        android:src="@drawable/enchanted_forest" />
+        android:src="@drawable/casa" />
 
     <TextView
         android:id="@+id/textStoryEnchantedForest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="@string/textStoryEnchantedForest"
+        android:layout_marginTop="10dp"
         android:gravity="center"
-        android:textSize="18sp"
-        android:layout_marginTop="10dp"/>
+        android:text="@string/textStoryHauntedHouse"
+        android:textSize="18sp" />
 
 </LinearLayout>
